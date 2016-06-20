@@ -1,0 +1,19 @@
+<%= form_for(@card) do |f| %>
+
+    <p>
+      <%= f.label :front %>
+      <%= f.text_field :front %>
+    </p>
+    <p>
+        <%= f.label :group %>
+        <%= f.text_field :group %>
+    </p>
+    <p>
+        <%= f.label :back %>
+        <%= f.text_area :back %>
+    </p>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

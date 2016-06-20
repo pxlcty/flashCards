@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+<h5>deck : <%= @card.group %></h5>
+<h3><%= @card.front %></h3>
+<p><%= simple_format( @card.back ) %></p>
+<p><h5><%= link_to 'edit', edit_card_path(@card) %> |
+<%= link_to 'destroy', @card, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'index', cards_path %> |
+<%= link_to 'new card', new_card_path %></h5</p>
